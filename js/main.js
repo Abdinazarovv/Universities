@@ -1,6 +1,8 @@
 let elWrapper = document.querySelector(".wrapper");
 let elTemplate = document.querySelector("#table__row").content;
 
+
+
 function renderUniversities(array) {
     elWrapper.innerHTML = null
     let newFragment = document.createDocumentFragment()
@@ -19,6 +21,6 @@ function renderUniversities(array) {
 }
 
 
-fetch("http://universities.hipolabs.com/search?country=United+States")
+fetch("http://universities.hipolabs.com/search?country=united+states")
 .then(res => res.json())
 .then(data => renderUniversities(data))
