@@ -19,6 +19,6 @@ function renderUniversities(array) {
 }
 
 
-fetch("http://universities.hipolabs.com/search?country=united+states")
+fetch("http://universities.hipolabs.com/search?country=United+States")
 .then(res => res.json())
 .then(data => renderUniversities(data))
